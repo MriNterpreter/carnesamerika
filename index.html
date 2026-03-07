@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARNES AMERIKA</title>
+  
+  <!-- Font Awesome CDN Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+
+  <style>
+    body {
+      font-family: 'Arial Black', Gadget, sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #388e3c; 
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav {
+      background-color: #d32f2f; 
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .products h2 {
+      color: #d32f2f;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      border: 2px solid #388e3c;
+      border-radius: 15px;
+      padding: 1.5rem;
+      text-align: center;
+      background-color: #f9f9f9;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+      border-color: #d32f2f;
+    }
+    /* Icon Styling */
+    .product-card i {
+      display: block;
+      font-size: 2.5rem;
+      color: #388e3c;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+    .product-card:hover i {
+      color: #d32f2f;
+    }
+    .product-card h3 {
+      margin: 0;
+      color: #d32f2f;
+      font-size: 1.4rem;
+    }
+    .product-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+    .product-card:hover ul {
+      max-height: 300px;
+      opacity: 1;
+      margin-top: 15px;
+    }
+    .product-card li {
+      padding: 8px 0;
+      border-bottom: 1px dashed #ddd;
+      font-size: 0.95rem;
+    }
+    .promo-banner {
+      background-color: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin: 3rem 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+      border-radius: 12px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CARNES AMERIKA</h1>
+    <p>Calidad y Precio en Cuauhtémoc, Chihuahua</p>
+  </header>
+
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#ubicacion">Ubicación</a>
+  </nav>
+
+  <div class="content">
+    <section id="productos" class="products">
+      <h2>Nuestros Productos</h2>
+      <div class="product-list">
+        
+        <div class="product-card">
+          <i class="fa-solid fa-bottle-water"></i> <!-- Soda/Water Icon -->
+          <h3>Coca-Cola</h3>
+          <ul>
+            <li>300 ml - $12</li>
+            <li>600 ml - $22</li>
+            <li>1.5 L NR - $30</li>
+          </ul>
+        </div>
+
+        <div class="product-card">
+          <i class="fa-solid fa-cow"></i> <!-- Meat/Cow Icon -->
+          <h3>Carnes Frías</h3>
+          <ul>
+            <li>Jamón - $50/kg</li>
+            <li>Salchicha - $40/kg</li>
+            <li>Tocino - $65/kg</li>
+          </ul>
+        </div>
+
+        <div class="product-card">
+          <i class="fa-solid fa-bread-slice"></i> <!-- Bread Icon -->
+          <h3>Pan Dulce</h3>
+          <ul>
+            <li>Conchas - $12 c/u</li>
+            <li>Donas - $10 c/u</li>
+            <li>Bolillo - $5 c/u</li>
+          </ul>
+        </div>
+
+        <div class="product-card">
+          <i class="fa-solid fa-cart-shopping"></i> <!-- Grocery Icon -->
+          <h3>Abarrotes</h3>
+          <ul>
+            <li>Arroz - $20/kg</li>
+            <li>Frijol - $25/kg</li>
+            <li>Aceite - $38</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="promo-banner">
+      ¡PASE USTED Y COMPARE PRECIOS!
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 CARNES AMERIKA</p>
+  </footer>
+
+</body>
+</html>
